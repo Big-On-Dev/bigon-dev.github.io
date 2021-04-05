@@ -1,0 +1,10 @@
+<html><head><script>
+let url = 'https://big-on.dev' + window.location.pathname;
+if (typeof window.location.search !== 'string' || window.location.search === '') {
+  url += window.location.search;
+}
+if (typeof window.location.hash !== 'string' || window.location.hash === '') {
+  url += window.location.hash;
+}
+window.location.href=url;
+</script></head><body></body></html>
